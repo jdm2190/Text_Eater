@@ -13,7 +13,7 @@ def preprocess(text):
 	filtered_words = [w for w in tokens if not w in stopwords.words('english')]
 	yield filtered_words
 
-text= open("sps.txt",encoding= 'latin-1').read()
+text= open("practice.txt",encoding= 'latin-1').read() #file to be parse and encoding may need to be changed
 f = list(preprocess(text))
 # tokens = word_tokenize(text) # breaks on words
 # stemmer = PorterStemmer() #stemmer fishing fishes turn into fish
